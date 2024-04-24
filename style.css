@@ -29,7 +29,7 @@ h1 {
 
 
 
-header nav {
+.navtop {
     padding-top: 15px;
     margin-right: 25px
     font-family: 'Times New Roman', Times, serif;
@@ -38,13 +38,13 @@ header nav {
     float: right;
 }
 
-header nav ul{
+.navtop ul{
     list-style-type: none;
    
 
 }
 
-header nav ul li {
+.navtop ul li {
     display: inline-block;
     margin-left: 25px;
 
@@ -76,6 +76,7 @@ p {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
+    flex: 0 0 20%;
 }
 
 .projects {
