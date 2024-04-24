@@ -8,11 +8,18 @@ body {
     background-color: rgb(247, 237, 239);
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header {
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px;
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(201, 201, 251);
-    color: #030303;
+    color: #ffffff;
 }
 
 h1 {
@@ -20,26 +27,91 @@ h1 {
     font-size: 43px;
 }
 
+
+
 header nav {
-    padding-top: 
-    margin-right:
-    float: 
-    Font-familly: 
-    font-size:
+    padding-top: 15px;
+    margin-right: 25px
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    display: inline-block;
+    float: right;
 }
 
-header nav ul {
+header nav ul{
+    list-style-type: none;
+   
 
 }
 
 header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+
 
 }
 
 a {
+    color: #d56aea;
+    text-decoration: underline;
 
 } 
 
 p {
-    
+    font-size: 25px;
+
+}
+
+.profile-pic {
+    height: 476px;
+    width: 26%;
+    margin-bottom: 35px;
+    background-image: url("./Profile Pic.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.section1-style {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.projects {
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    float: left;
+    width: 25%
+}
+
+.projects header {
+    padding: 20px;
+}
+
+.projects p {
+    text-align: center;
+}
+
+.projects img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        background: pink;
+        font-size: 65px ;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 85px;
+    }
+}
+@media screen and (max-width: 576px) {
+    header {
+        font-size: 140px;
+    }
 }
