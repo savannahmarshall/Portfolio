@@ -10,12 +10,33 @@ body {
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.profile {
+    padding: 0;
+    margin: 0;
+    display: inline; 
+    float: left;
+    margin-right: 20px;
+    font-size: 35px;
+}
+.profile-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+
+h2 {
+    flex: 0 0 20%;
+    padding-left: 60px;
+    color: rgb(194, 121, 166);
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
     padding: 20px;
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(201, 201, 251);
@@ -28,14 +49,15 @@ h1 {
 }
 
 
-
 .navtop {
     padding-top: 15px;
     margin-right: 25px
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 35px;
     display: inline-block;
     float: right;
+    border-style: dashed;
+    border-color: pink ;
 }
 
 .navtop ul{
@@ -46,58 +68,103 @@ h1 {
 
 .navtop ul li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
 
 
 }
 
-a {
-    color: #d56aea;
+.navtop  a{
     text-decoration: underline;
+    color:white;
+}
+
+a {
 
 } 
 
 p {
-    font-size: 25px;
+    padding: 20px;
 
 }
 
 .profile-pic {
-    height: 476px;
-    width: 26%;
+    height: 200px;
+    width: 200px;
+    margin-top: 45px;
+    margin-left: 65px;
     margin-bottom: 35px;
     background-image: url("./Profile Pic.jpg");
     background-size: cover;
     background-position: center;
+    padding-left: 60px;
+    border:solid 5px;
+    border-color: pink;
 
 }
 
-.section1-style {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-    flex: 0 0 20%;
-}
 
-.projects {
-    border-style: solid;
-    border-width: 2px;
-    padding: 10px;
-    float: left;
-    width: 25%
-}
-
-.projects header {
+.grid {
+    display: flex;
     padding: 20px;
+    width: 300px;
+
 }
 
-.projects p {
+.grid-boxes {
+    flex: 1;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
     text-align: center;
+    padding:10px;
+
 }
 
-.projects img {
-    width: 100%;
+.grid-boxes h3 {
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(201, 201, 251);
+    color: #ffffff;
 }
+
+.grid-boxes p {
+    border-width: 5px;
+    border-style:solid;
+    text-align: center;
+    background-color: pink;
+    color: white;
+}
+
+.grid-boxes img {
+    background-size: cover;
+    width: 300px;
+}
+
+
+
+.contacts {
+    padding-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.contacts ul {
+    list-style-type: none;
+}
+
+.contacts ul li {
+    display: inline-block;
+    margin-left: 25px;
+    text-decoration: underline;
+    padding: 10px;
+    color: rgb(194, 121, 166);
+    
+
+}
+
 
 @media screen and (max-width: 992px) {
     header {
@@ -109,6 +176,9 @@ p {
 @media screen and (max-width: 768px) {
     header {
         font-size: 85px;
+    }
+    .grid {
+        display:block;
     }
 }
 @media screen and (max-width: 576px) {
