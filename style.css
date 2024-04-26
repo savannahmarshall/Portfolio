@@ -6,6 +6,8 @@
 
 body {
     background-color: rgb(247, 237, 239);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 }
 
 main {
@@ -34,6 +36,7 @@ h2 {
     flex: 0 0 20%;
     padding-left: 60px;
     color: rgb(194, 121, 166);
+    padding-bottom: 15px;
 }
 
 header {
@@ -75,7 +78,7 @@ h1 {
 }
 
 .navtop  a{
-    text-decoration: underline;
+    text-decoration: underline 5px;
     color:white;
 }
 
@@ -104,10 +107,46 @@ p {
 }
 
 
+.grid-box1 {
+    width: 300px;
+    height: 20%;
+    text-align: center;
+    margin-left: 350px;
+    margin-bottom: 20px;
+}
+
+.grid-box1 h3 {
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(201, 201, 251);
+    color: #ffffff;
+    width: 300%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+}
+
+.grid-box1 p {
+    border-width: 5px;
+    border-style:solid;
+    border-color:white;
+    text-align: center;
+    background-color: pink;
+    color: white;
+    width: 300%;
+}
+
+.grid-box1 img {
+    object-fit: cover;
+    width: 300%;
+
+}
+
 .grid {
     display: flex;
-    padding: 20px;
-    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 300%;
 
 }
 
@@ -118,7 +157,9 @@ p {
     border-color: white;
     border-width: 5px;
     text-align: center;
-    padding:10px;
+    margin-left: 150px;
+    padding: 5px;
+    margin-bottom: 20px;
 
 }
 
@@ -127,22 +168,25 @@ p {
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(201, 201, 251);
     color: #ffffff;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
 }
 
 .grid-boxes p {
     border-width: 5px;
     border-style:solid;
+    border-color: white;
     text-align: center;
     background-color: pink;
     color: white;
 }
 
 .grid-boxes img {
-    background-size: cover;
-    width: 300px;
+    object-fit: cover;
+    width: 300px ;
+    
 }
-
-
 
 .contacts {
     padding-top: 15px;
@@ -158,8 +202,8 @@ p {
 .contacts ul li {
     display: inline-block;
     margin-left: 25px;
-    text-decoration: underline;
-    padding: 10px;
+    text-decoration: underline 5px;
+    padding: 15px;
     color: rgb(194, 121, 166);
     
 
@@ -167,22 +211,35 @@ p {
 
 
 @media screen and (max-width: 992px) {
-    header {
+    h2 {
         background: pink;
-        font-size: 65px ;
+        font-size: 35px ;
     }
-}
 
-@media screen and (max-width: 768px) {
-    header {
-        font-size: 85px;
-    }
+    .grid-box1 {
+        width: 25% ;
+        margin-left: 0;
+   }
     .grid {
-        display:block;
+        width: 50% ;
+        margin-left: 0;
     }
+
+    .grid-boxes {
+        width: 50%;
+    }
+
+    .profile-text {
+        display: block;
+    }
+
+    .contacts {
+        display: block;
+    }
+
 }
 @media screen and (max-width: 576px) {
-    header {
-        font-size: 140px;
-    }
+    h2 {
+        font-size: 65px;
+}
 }
