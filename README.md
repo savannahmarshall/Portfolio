@@ -6,5 +6,5 @@ While completing this project, I learned how to separate elements using margins 
 
 The link to this project is here: https://savannahmarshall.github.io/Portfolio-C2/
 
-
+![alt text](https://github.com/savannahmarshall/Portfolio-C2/blob/main/Challenge-2%20Screenshot.png)
 
